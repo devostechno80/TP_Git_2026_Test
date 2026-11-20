@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btAjouter">
     <property name="geometry">
      <rect>
       <x>240</x>
@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>ajouter</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
@@ -38,6 +38,19 @@
     </property>
     <property name="text">
      <string>toto</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btSupprimer">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>310</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Suppression</string>
     </property>
    </widget>
   </widget>

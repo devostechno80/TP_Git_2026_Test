@@ -24,8 +24,9 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QPushButton *pushButton;
+    QPushButton *btAjouter;
     QLabel *label;
+    QPushButton *btSupprimer;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -36,12 +37,15 @@ public:
         MainWindow->resize(558, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(240, 250, 75, 24));
+        btAjouter = new QPushButton(centralwidget);
+        btAjouter->setObjectName("btAjouter");
+        btAjouter->setGeometry(QRect(240, 250, 75, 24));
         label = new QLabel(centralwidget);
         label->setObjectName("label");
         label->setGeometry(QRect(200, 130, 49, 16));
+        btSupprimer = new QPushButton(centralwidget);
+        btSupprimer->setObjectName("btSupprimer");
+        btSupprimer->setGeometry(QRect(300, 310, 75, 24));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -59,8 +63,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        btAjouter->setText(QCoreApplication::translate("MainWindow", "ajouter", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "toto", nullptr));
+        btSupprimer->setText(QCoreApplication::translate("MainWindow", "Suppression", nullptr));
     } // retranslateUi
 
 };
