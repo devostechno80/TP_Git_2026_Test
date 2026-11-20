@@ -56,7 +56,7 @@ OBJECTS       = release/main.o \
 		release/mainwindow.o \
 		release/moc_mainwindow.o
 
-DIST          =  ..\..\mainwindow.h ..\..\main.cpp \
+DIST          = README.md ..\..\mainwindow.h ..\..\main.cpp \
 		..\..\mainwindow.cpp
 QMAKE_TARGET  = TP_Git_2026_test
 DESTDIR        = release\ #avoid trailing-slash linebreak

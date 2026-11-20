@@ -56,7 +56,7 @@ OBJECTS       = debug/main.o \
 		debug/mainwindow.o \
 		debug/moc_mainwindow.o
 
-DIST          =  ..\..\mainwindow.h ..\..\main.cpp \
+DIST          = README.md ..\..\mainwindow.h ..\..\main.cpp \
 		..\..\mainwindow.cpp
 QMAKE_TARGET  = TP_Git_2026_test
 DESTDIR        = debug\ #avoid trailing-slash linebreak
